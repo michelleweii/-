@@ -61,16 +61,12 @@ def kmeans(x, k):
             idx[i,:] = minIndex, minDist ** 2
         # 3.更新质心的位置
         centroids = ChangeCent(x, idx, k)
-    return centroids, idx
+    return centroids,idx
 
 # idx 是簇分配结果矩阵，包含两列：一列记录簇索引值，第二列存储误差
 # 误差指的是：当前点到簇质心的距离
 
 # 计算质心-分配-重新计算，反复迭代，知道所有数据点的簇分配结果不在改变
-
-
-
-
 
 
 
